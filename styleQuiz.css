@@ -1,0 +1,271 @@
+body {
+    min-height: 100vh;
+    background-color: blanchedalmond !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+.progress {
+    background-color: rgb(121, 119, 119);
+    height: 15px;
+    width: 100%;
+}
+
+.progress-done {
+    background-color: rgb(36, 44, 119);
+    height: 100%;
+    min-width: 0%;
+    max-width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-menu {
+    background-color: white;
+    height: 25px;
+    width: 4px;
+}
+
+.progress-position {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 78px;
+    margin-left: 15px;
+}
+
+.progress-position-css {
+    width: 187px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 75px;
+    margin-left: 1px;
+}
+
+.progress-position-js {
+    width: 177px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 96px;
+    margin-left: 15px;
+}
+
+.progress-position-java {
+    width: 187px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 75px;
+    margin-left: 1px;
+}
+
+.container {
+    background-color: rgba(247, 247, 247, 255);
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 160px;
+    margin-top: 150px;
+}
+
+.container-finish {
+    background-color: rgba(247, 247, 247, 255);
+    border-radius: 20px;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 150px;
+}
+
+.trophy {
+    background-image: url('Gold-Trophy-PNG.png');
+    background-size: 130px;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+
+.position-trophy {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    background-color: rgba(35, 35, 112, 0.719);
+    width: 200px;
+    height: 600px;
+    border-radius: 20px 0px 0px 20px;
+    z-index: 2;
+}
+
+.question-field {
+    color: black;
+    background-image: url('brainbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'PT Sans', sans-serif;
+    ;
+    height: 590px;
+    width: 688px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.question-field-finish {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    height: 590px;
+    width: 350px;
+    margin-left: 185px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-field-finish img {
+    height: 100px;
+    width: 100px;
+}
+
+.question-field2 {
+    color: black;
+    background-color: rgba(247, 247, 247, 255);
+    height: 590px;
+    width: 800px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.question-field img {
+    width: 400px;
+    height: 400px;
+}
+
+.question-text {
+    z-index: 3;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.question-text2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+.logo {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-text {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.buttonfield {
+    height: 50px;
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.start-btn {
+    height: 50px;
+    width: 200px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: lighter;
+    border-radius: 15px;
+    background-color: rgb(255, 124, 2);
+    font-size: 25px;
+    color: white;
+}
+
+.start-btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 124, 2, 0.6);
+}
+
+.answer-container {
+    font-family: 'Rubik', sans-serif;
+    height: 60px;
+    width: 420px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.answer {
+    height: 60px;
+    width: 350px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-container:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.abc {
+    height: 45px;
+    width: 45px;
+    background-color: rgb(133, 127, 127);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background-color: #63db4b !important;
+}
+
+.red {
+    background-color: #f72d2d !important;
+}
