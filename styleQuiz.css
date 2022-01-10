@@ -8,6 +8,10 @@ body {
     margin: 0px;
 }
 
+#progressbar {
+    color: white;
+}
+
 .progress {
     background-color: rgb(121, 119, 119);
     height: 15px;
@@ -27,6 +31,7 @@ body {
 
 .progress-menu {
     background-color: white;
+    color: white;
     height: 25px;
     width: 4px;
 }
@@ -78,8 +83,8 @@ body {
     height: 600px;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 160px;
-    margin-top: 150px;
+    margin-bottom: 250px;
+    margin-top: 100px;
 }
 
 .container-finish {
@@ -90,7 +95,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-content: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .trophy {
@@ -120,7 +125,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'PT Sans', sans-serif;
-    ;
     height: 590px;
     width: 688px;
     display: flex;
@@ -268,4 +272,174 @@ body {
 
 .red {
     background-color: #f72d2d !important;
+}
+
+.answerBlock {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 900px;
+        height: 1400px;
+        display: block;
+    }
+
+    .menu {
+        width: 900px;
+        height: 300px;
+        border-radius: 20px 20px 0px 0px;
+        z-index: 2;
+        top: 125px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .logo {
+        width: 904px;
+        height: 200px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .menu-text {
+        font-size: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0px;
+    }
+
+    .question-field {
+        background-size: contain;
+        font-size: 40px;
+        height: 1150px;
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .question-text {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .buttonfield {
+        height: 60px;
+        width: 600px;
+    }
+
+    .start-btn {
+        height: 100px;
+        width: 300px;
+        font-size: 45px;
+    }
+
+    .progress-menu {
+        height: 4px;
+        width: 80px;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    .progress-position {
+        width:unset ;
+        margin-left: unset;
+        margin-right: unset;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .question-field2 {
+        width: 900px;
+        height: 950px;
+    }
+
+    .question-text2 {
+        font-size: 40px;
+    }
+
+    .answer-container {
+        height: 100px;
+        width: 650px;
+        margin-bottom: 65px;
+    }
+
+    .abc {
+        height: 80px;
+        width: 80px;
+        font-size: 32px;
+    }
+
+    .answer {
+        width: 490px;
+        font-size: 38px;
+    }
+
+    .container-finish {
+        width: 900px;
+        height: 1500px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .question-field-finish{
+        width: unset;
+        margin-left: unset;
+        height: unset;
+        font-size: 38px;
+        padding-top: 50px;
+        
+    }
+
+    .question-field-finish img{
+        height: 150px;
+        width: 150px;
+    }
+
+    .position-trophy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .progress-position-css {
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    .progress-position-java {
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    .progress-position-js {
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    #progressbar {
+        font-size: 45px;
+    }
+
+    .progress {
+        height: 35px;
+    }
 }

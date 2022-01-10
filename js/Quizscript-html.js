@@ -1,3 +1,4 @@
+
 let questions = [
     {
         "question": "Wer hat HTML erfunden?",
@@ -47,6 +48,7 @@ let questions = [
 
 let rightQuestions = 0;
 let currentQuestion = 0;
+let disableButton = false;
 let AUDIO_SUCCESS = new Audio('Audio/SFX-Magic.mp3');
 let AUDIO_WRONG = new Audio('Audio/wrong.mp3');
 
@@ -57,14 +59,14 @@ function showQuestion() {
         percent = percent * 100;
         document.getElementById('progressbar').style = `width: ${percent}%`;
         saveResult();
-        setTimeout('finishPage()', 2000);
-        
+        setTimeout('finishPage()', 50);
+
     } else {
         let percent = currentQuestion / questions.length;
         percent = percent * 100;
         document.getElementById('progressbar').innerHTML = `${percent} %`;
         document.getElementById('progressbar').style = `width: ${percent}%`;
-        
+
         let question = questions[currentQuestion];
 
         document.getElementById('question_text').innerHTML = question['question'];
@@ -87,16 +89,18 @@ function answer(selection) {
     if (selectedQuestionnumber == question['right_answer']) {
         console.log('Richtige Antwort !');
         document.getElementById(selection).parentNode.classList.add('green');
+        answerBlock();
         AUDIO_SUCCESS.play();
         rightQuestions++;
-        setTimeout('nextQuestion()', 1000);
+        setTimeout(nextQuestion, 2000);
     }
     else {
         console.log('Falsche Antwort!');
         document.getElementById(selection).parentNode.classList.add('red');
         document.getElementById(idOfRightAnswer).parentNode.classList.add('green');
+        answerBlock();
         AUDIO_WRONG.play();
-        setTimeout('nextQuestion()', 1000);
+        setTimeout(nextQuestion, 2000);
     }
 }
 
@@ -137,3 +141,13 @@ function loadResult() {
     document.getElementById('amount-of-right-questions').innerHTML = result;
 }
 
+function answerBlock() {
+    var addClass = document.getElementById('containerOfAnswers');
+    addClass.className +="answerBlock";
+    setTimeout(removeAnswerBlock, 2000);
+}
+
+function removeAnswerBlock() {
+    var addClass = document.getElementById('containerOfAnswers');
+    addClass.classList.remove('answerBlock');
+}

@@ -7,7 +7,9 @@
         href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@400;500&display=swap"
         rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/Quizscript-html.js"></script>
+
     <link rel="stylesheet" href="styleQuiz.css">
     <meta charset="UTF-8">
 
@@ -40,25 +42,32 @@
         </div>
         <div class="question-field2">
             <div id="question_text" class="question-text2">
+            </div>
+            <div style="position: relative;">
+                <div id="containerOfAnswers"></div>
+                <div class="answer-container" id="answer-div" onclick="answer('answer1')">
+                    <div class="abc">A</div>
+                    <div id="answer1" class="answer"></div>
+                </div>
 
-            </div>
-            <div class="answer-container" onclick="answer('answer1')">
-                <div class="abc">A</div>
-                <div id="answer1" class="answer"></div>
-            </div>
-            <div class="answer-container" onclick="answer('answer2')">
-                <div class="abc">B</div>
-                <div id="answer2" class="answer"></div>
-            </div>
-            <div class="answer-container" onclick="answer('answer3')">
-                <div class="abc">C</div>
-                <div id="answer3" class="answer"></div>
-            </div>
-            <div class="answer-container" onclick="answer('answer4')">
-                <div class="abc">D</div>
-                <div id="answer4" class="answer"></div>
+                <div class="answer-container" id="answer-div" onclick="answer('answer2')">
+                    <div class="abc">B</div>
+                    <div id="answer2" class="answer"></div>
+                </div>
+
+                <div class="answer-container" id="answer-div" onclick="answer('answer3')">
+                    <div class="abc">C</div>
+                    <div id="answer3" class="answer"></div>
+                </div>
+
+                <div class="answer-container" id="answer-div" onclick="answer('answer4')">
+                    <div class="abc">D</div>
+                    <div id="answer4" class="answer"></div>
+                </div>
             </div>
         </div>
+
+    </div>
 
     </div>
 
@@ -66,4 +75,4 @@
 </body>
 
 
-</html>
+</html
