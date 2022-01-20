@@ -99,7 +99,7 @@ body {
 }
 
 .trophy {
-    background-image: url('Gold-Trophy-PNG.png');
+    background-image: url("Gold-Trophy-PNG.png");
     background-size: 130px;
     background-repeat: no-repeat;
     width: 150px;
@@ -121,10 +121,10 @@ body {
 
 .question-field {
     color: black;
-    background-image: url('brainbg.jpg');
+    background-image: url("brainbg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     height: 590px;
     width: 688px;
     display: flex;
@@ -133,9 +133,9 @@ body {
     justify-content: space-around;
 }
 
-.question-field-finish {
+.question-field-finish2 {
     color: black;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -152,6 +152,14 @@ body {
 .question-field-finish img {
     height: 100px;
     width: 100px;
+}
+
+.question-field-finish1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .question-field2 {
@@ -180,7 +188,7 @@ body {
 }
 
 .question-text2 {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 22px;
     text-align: center;
@@ -196,7 +204,7 @@ body {
 
 .menu-text {
     color: white;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: normal;
     font-size: 23px;
     display: flex;
@@ -218,7 +226,7 @@ body {
 .start-btn {
     height: 50px;
     width: 200px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-weight: lighter;
     border-radius: 15px;
     background-color: rgb(255, 124, 2);
@@ -232,7 +240,7 @@ body {
 }
 
 .answer-container {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     height: 60px;
     width: 420px;
     background-color: rgb(235, 235, 235);
@@ -280,38 +288,42 @@ body {
     right: 0;
     left: 0;
     bottom: 0;
-
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
+    body {
+        max-height: 100vh;
+        justify-content: unset;
+        overflow: hidden;
+    }
+
     .container {
-        width: 900px;
-        height: 1400px;
+        max-width: 100vw;
+        max-height: 100vh;
         display: block;
+        margin-top: unset;
+        border-radius: unset;
     }
 
     .menu {
-        width: 900px;
-        height: 300px;
-        border-radius: 20px 20px 0px 0px;
-        z-index: 2;
-        top: 125px;
+        width: unset;
+        height: unset;
+        border-radius: unset;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
     .logo {
-        width: 904px;
-        height: 200px;
+        width: unset;
+        height: unset;
         margin-top: 10px;
         display: flex;
         justify-content: center;
-
     }
 
     .menu-text {
-        font-size: 40px;
+        font-size: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -319,10 +331,13 @@ body {
     }
 
     .question-field {
-        background-size: contain;
-        font-size: 40px;
-        height: 1150px;
-        width: 900px;
+        font-size: 20px;
+        min-width: 100vw;
+        min-height: 80vh;
+        width: unset;
+        height: unset;
+        background-position: center;
+        background-color: #f5f5f5;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -330,20 +345,19 @@ body {
     }
 
     .question-text {
-        font-size: 40px;
+        font-size: 20px;
         text-align: center;
-        margin-top: 100px;
+        margin-top: unset;
     }
 
     .buttonfield {
-        height: 60px;
-        width: 600px;
+        height: unset;
+        width: unset;
+        align-items: center;
     }
 
     .start-btn {
-        height: 100px;
-        width: 300px;
-        font-size: 45px;
+        font-size: 20px;
     }
 
     .progress-menu {
@@ -354,7 +368,7 @@ body {
     }
 
     .progress-position {
-        width:unset ;
+        width: unset;
         margin-left: unset;
         margin-right: unset;
         display: flex;
@@ -363,58 +377,83 @@ body {
     }
 
     .question-field2 {
-        width: 900px;
-        height: 950px;
+        max-width: 100vw;
+        min-height: 81vh;
+        height: unset;
+        width: unset;
+        border-radius: unset;
     }
 
     .question-text2 {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     .answer-container {
-        height: 100px;
-        width: 650px;
+        height: 60px;
+        max-width: 80vw;
         margin-bottom: 65px;
     }
 
     .abc {
-        height: 80px;
-        width: 80px;
-        font-size: 32px;
+        height: 40px;
+        width: 40px;
+        font-size: 25px;
+        margin-left: 10px;
     }
 
     .answer {
-        width: 490px;
-        font-size: 38px;
+        max-width: 70vh;
+        font-size: 20px;
     }
 
     .container-finish {
-        width: 900px;
-        height: 1500px;
+        max-width: 100vw;
+        min-height: 100vh;
+        height: unset;
         display: flex;
         flex-direction: column;
-        
+        margin-top: unset;
+        border-radius: unset;
     }
 
-    .question-field-finish{
-        width: unset;
-        margin-left: unset;
+    .question-field-finish1 {
+        max-width: 100vw;
+        min-height: 82vh;
+        border-radius: unset;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .question-field-finish2 {
+        max-width: 100vw;
+        min-height: 45vh;
         height: unset;
-        font-size: 38px;
-        padding-top: 50px;
-        
+        width: unset;
+        padding-bottom: 50px;
+        border-radius: unset;
+        font-size: 20px;
+        margin-left: unset;
+        justify-content: unset;
+        padding-top: 15px;
     }
 
-    .question-field-finish img{
-        height: 150px;
-        width: 150px;
+    .brain-result {
+        width: 100px;
+        height: 100px;
     }
 
-    .position-trophy{
+    .question-field-finish img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .position-trophy {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 50px;
     }
 
     .progress-position-css {
@@ -436,10 +475,53 @@ body {
     }
 
     #progressbar {
-        font-size: 45px;
+        font-size: 20px;
     }
 
     .progress {
-        height: 35px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 300px) {
+    .question-field2 {
+        justify-content: start;
+    }
+
+    .answer-container {
+        margin-bottom: 20px;
+    }
+
+    .answer {
+        font-size: 15px;
+    }
+
+    .abc {
+        font-size: 16px;
+    }
+
+    .question-text2 {
+        font-size: 18px;
+    }
+
+    .question-field-finish2 {
+        min-height: 50vh;
+        font-size: 15px;
+        padding-bottom: unset;
+    }
+
+    .brain-result {
+        width: 50px;
+        height: 50px;
+    }
+
+    .start-btn {
+        height: 30px;
+    }
+
+    .trophy {
+        background-size: 100px;
+        width: 102px;
+        height: 113px;
     }
 }
